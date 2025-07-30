@@ -5,9 +5,9 @@ This guide is designed for IT beginners to practice domain controller setup, cli
 
 ## 📂 Steps Covered
 1. [Lab Network & Virtual Machine Setup](setup/01-network-virtual-machine-setup.md)
-4. [Configure Domain Controller](setup/04-domain-controller.md)
-5. [Join Client to Domain](setup/05-client-join-domain.md)
-6. [Test Users and Tools](setup/06-test-and-tools.md)
+2. [Configure Domain Controller](setup/02-domain-controller.md)
+3. [Join Client to Domain](setup/03-client-join-domain.md)
+4. [Test Users and Tools](setup/04-test-and-tools.md)
 
 ## 🔧 Tools Used
 - VirtualBox
