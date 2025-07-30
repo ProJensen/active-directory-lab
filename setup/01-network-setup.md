@@ -37,3 +37,13 @@ This step will guide you through setting up **dual network interfaces** using **
 
 3. Configure the IP range if needed (default: 192.168.56.1/24)
 
+![create-host-only-example](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/create-host-only-example.png)
+
+4. Click the NAT Networks tab beside Host-Only Network
+
+5. Click Create to add a NAT Network
+
+![create-nat-network-example](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/create-nat-network-example.png)
+
+
+
