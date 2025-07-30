@@ -160,4 +160,4 @@ If any ping fails
 
 ![dc-ping-success-example](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/dc-ping-success-example%20(1).png)
 
-### Now you may try to ping the Domain Controller in the same way.
+## 💡 Now you may try to ping the Domain Controller from the Client VM in the same way.
