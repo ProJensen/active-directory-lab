@@ -45,6 +45,26 @@ This step will guide you through setting up **dual network interfaces** using **
 
 ![create-nat-network-example](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/create-nat-network-example.png)
 
+## ✅ VirtualBox Configuration (per VM)
+
+1. Open VirtualBox Manager
+
+2. Select VM → Settings → Network
+
+### Adapter 1: Host-Only
+
+- Enable Network Adapter ✅
+
+- Attached to: Host-Only Adapter
+
+- Name: e.g., vboxnet0
+
+### Adapter 2: NAT
+
+- Enable Network Adapter ✅
+
+- Attached to: NAT
+
 ## 🔌 Adapter 1 – Host-Only
 
 - Internal, isolated network for VM-to-VM communication
