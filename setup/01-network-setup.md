@@ -1,5 +1,24 @@
 # 🌐 Step 1: Virtual Network Setup
 
+## 🪜 Steps:
+
+1. Open VirtualBox > Network Manager
+
+2. Create a host-only network & a NAT network
+
+3. In each VM's settings:
+
+- Network Adapter 1 > Attach to: Host-only Adapter
+- Network Adapter 2 > Attach to: NAT
+
+4. Boot both VMs
+
+5. Set static IP on the Server VM
+
+6. Run 'ipconfig' and 'ping' to test connectivity
+
+---
+
 To simulate a real-world Active Directory lab environment using VirtualBox, we need to configure a proper virtual network that allows:
 
 - Internal communication between virtual machines (VMs)  
@@ -59,13 +78,12 @@ This step will guide you through setting up **dual network interfaces** using **
 
 - Name: e.g., vboxnet0
 
-#### Purpose
+     - Internal, isolated network for VM-to-VM communication
 
-- Internal, isolated network for VM-to-VM communication
+     - No internet access
 
-- No internet access
+     - IPs like 192.168.56.x
 
-- IPs like 192.168.56.x
 
 ### 🔌 Adapter 2: NAT
 
@@ -73,9 +91,8 @@ This step will guide you through setting up **dual network interfaces** using **
 
 2. Attached to: NAT
 
-#### Purpose
+     - Internet access through host machine
 
-- Internet access through host machine
+     - Used for downloading packages or Windows updates
 
-- Used for downloading packages or Windows updates
-
+---
