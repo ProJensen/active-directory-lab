@@ -8,8 +8,8 @@
 
 3. In each VM's settings:
 
-- Network Adapter 1 > Attach to: Host-only Adapter
-- Network Adapter 2 > Attach to: NAT
+     - Network Adapter 1 > Attach to: Host-only Adapter
+     - Network Adapter 2 > Attach to: NAT
 
 4. Boot both VMs
 
@@ -96,3 +96,68 @@ This step will guide you through setting up **dual network interfaces** using **
      - Used for downloading packages or Windows updates
 
 ---
+
+## 🌐 IP Configuration Example
+
+### In Windows Server VM (e.g., DC01):
+
+1. Open Control Panel > Network and Sharing Center > Change Adapter Settings
+
+2. Identify the Host-Only Adapter
+
+3. Double click Internet Protocol Version 4
+
+4. Set static IP:
+
+```
+IP Address:      192.168.56.10
+Subnet Mask:     255.255.255.0
+Default Gateway: (leave blank)
+Preferred DNS:   127.0.0.1 (for domain controller)
+```
+
+💡 Leave NAT adapter as DHCP (auto IP).
+
+---
+
+## 🖥️ ipconfig & ping testing
+
+✅ 1️⃣ On the Domain Controller (DC)
+
+🔹 Boot the VM
+
+🔹 Open Command Prompt and run:
+
+```bash
+ipconfig
+```
+
+![ipconfig-dc-example](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/ipconfig-dc-example.png)
+
+🔹  Test connectivity to the Client VM:
+
+```bash
+ping 192.168.56.20
+```
+
+![dc-ping-fail-example](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/dc-ping-fail-example.png)
+
+### 🧯 Troubleshooting
+
+If any ping fails
+
+- 🔒 Check Firewall: Temporarily disable Windows Firewall (Control Panel → Windows Defender Firewall → Turn off)
+
+- 🧩 Check VM Network Adapters: Ensure they are enabled
+
+- 📝 Check Static IP settings: Make sure no typos or misconfigurations
+
+### In this case, we try to turn off the firewall first
+
+![dc-turn-off-firework](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/dc-turn-off-firework.png)
+
+### ping the Client VM again
+
+![dc-ping-success-example](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/dc-ping-success-example%20(1).png)
+
+### Now you may try to ping the Domain Controller in the same way.
