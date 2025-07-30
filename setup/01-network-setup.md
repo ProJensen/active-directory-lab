@@ -51,21 +51,15 @@ This step will guide you through setting up **dual network interfaces** using **
 
 2. Select VM → Settings → Network
 
-### Adapter 1: Host-Only
+### 🔌 Adapter 1: Host-Only
 
-- Enable Network Adapter ✅
+1. Enable Network Adapter ✅
 
-- Attached to: Host-Only Adapter
+2. Attached to: Host-Only Adapter
 
 - Name: e.g., vboxnet0
 
-### Adapter 2: NAT
-
-- Enable Network Adapter ✅
-
-- Attached to: NAT
-
-## 🔌 Adapter 1 – Host-Only
+#### Purpose
 
 - Internal, isolated network for VM-to-VM communication
 
@@ -73,7 +67,13 @@ This step will guide you through setting up **dual network interfaces** using **
 
 - IPs like 192.168.56.x
 
-## 🔌 Adapter 2 – NAT
+### 🔌 Adapter 2: NAT
+
+1. Enable Network Adapter ✅
+
+2. Attached to: NAT
+
+#### Purpose
 
 - Internet access through host machine
 
