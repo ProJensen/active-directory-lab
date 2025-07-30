@@ -1,4 +1,4 @@
-# 🌐 Step 1: Virtual Network Setup
+# 🌐 Step 1: Lab Network & Virtual Machine Setup
 
 ## 🪜 Steps:
 
