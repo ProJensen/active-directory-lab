@@ -45,5 +45,17 @@ This step will guide you through setting up **dual network interfaces** using **
 
 ![create-nat-network-example](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/create-nat-network-example.png)
 
+## 🔌 Adapter 1 – Host-Only
 
+- Internal, isolated network for VM-to-VM communication
+
+- No internet access
+
+- IPs like 192.168.56.x
+
+## 🔌 Adapter 2 – NAT
+
+- Internet access through host machine
+
+- Used for downloading packages or Windows updates
 
