@@ -99,7 +99,7 @@ This step will guide you through setting up **dual network interfaces** using **
 
 ## 🌐 IP Configuration Example
 
-### In Windows Server VM (e.g., DC01):
+### In Windows Server VM:
 
 1. Open Control Panel > Network and Sharing Center > Change Adapter Settings
 
@@ -117,6 +117,23 @@ Preferred DNS:   127.0.0.1 (for domain controller)
 ```
 
 💡 Leave NAT adapter as DHCP (auto IP).
+
+### In Client VM:
+
+1. Repeat steps 1-3 from the Windows Server VM
+
+2. Set static IP:
+
+```
+IP Address:      192.168.56.20
+Subnet Mask:     255.255.255.0
+Default Gateway: (leave blank)
+Preferred DNS:   192.168.56.10
+```
+
+💡 Leave NAT adapter as DHCP (auto IP).
+
+💡 Make sure to have the same network ID as the Windows Server VM (192.168.56.x)
 
 ---
 
