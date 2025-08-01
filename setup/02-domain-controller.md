@@ -1,4 +1,4 @@
-# 🧩 Step 2: Configure Domain Controller
+# 🧩 Step 2: Install and Configure Domain Controller
 
 This step will guide you through installing Active Directory Domain Services (AD DS) and promoting the Windows Server to a Domain Controller (DC).
 
