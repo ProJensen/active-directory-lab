@@ -29,25 +29,6 @@ This step will guide you through setting up **dual network interfaces** using **
 
 ---
 
-## 🧱 Network Architecture Overview
-
-```text
-+----------------------+
-|    Host Machine      | (e.g. 192.168.56.1 - Host-Only)
-+----------------------+
-     |           |
-     |           +---------------------> Internet (via NAT)
-     |                             +-------------------------+
-     v                             v                         v
-+-----------+       +-----------+       +-----------+     +-----------+
-|  DC01 VM  | <----> | Client01  | <-->  | (More...) |     | Internet  |
-| Adapter 1: Host-Only Network    |                        |
-| Adapter 2: NAT (Internet Access)                        |
-+-----------+       +-----------+       +-----------+     +-----------+
-```
-
----
-
 ## 🛠️ Create Host-Only Adapter & NAT
 
 1. Go to File > Tools > Network Manager
