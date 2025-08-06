@@ -7,8 +7,7 @@ This guide is designed for IT beginners to practice domain controller setup, cli
 1. [Lab Network & Virtual Machine Setup](setup/01-network-virtual-machine-setup.md)
 2. [Install and Configure Domain Controller](setup/02-domain-controller.md)
 3. [Join Client to Domain](setup/03-client-join-domain.md)
-4. [Test Users and Tools](setup/04-test-and-tools.md)
-
+4. [Create AD User Account](setup/04-create-ad-user-account.md)
 ## 🔧 Tools Used
 - VirtualBox
 - Windows Server 2022
