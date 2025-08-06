@@ -77,6 +77,8 @@ Once created, you can place users or computers into this OU by dragging and drop
 
 5. Click **Finish**
 
+![cole-palmer-created](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/(4)cole-palmer-created.png)
+
 ---
 
 ## 🧪 4️⃣ Verify the User
