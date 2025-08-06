@@ -77,13 +77,14 @@ Once created, you can place users or computers into this OU by dragging and drop
 
 5. Click **Finish**
 
-![cole-palmer-created](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/(4)cole-palmer-created.png)
-
 ---
 
 ## 🧪 4️⃣ Verify the User
 
-- You should now see the user `jensen` under the OU or `Users`
+- You should now see the user `Cole CP. Palmer` under `LabUsers` or `Users`
+
+![cole-palmer-created](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/(4)cole-palmer-created.png)
+
 - Double-click the user to review:
    - Group Membership
    - Login Name
@@ -100,8 +101,10 @@ From your Windows 10/11 Client VM:
 1. Restart the VM if needed
 2. On login screen → Click **Other User**
 3. Log in with:
-   - **Username**: `BREDHON\jensen`
+   - **Username**: `LAB\colep`
    - **Password**: the one you set earlier
+  
+![sigin-to-cole-palmer](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/(4)login-to-cole-palmer.png)
 
 🎉 You should now be logged in as a Domain user!
 
