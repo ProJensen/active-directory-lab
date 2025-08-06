@@ -109,11 +109,11 @@ or use server IP:
 
 ![Access from Server IP](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/(5)192.168.56.10%5CLabDocs.png)
 
-3. Press Enter — you should see the shared folder contents
+2. Press Enter — you should see the shared folder contents
 
 ![Shared Folder](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/(5)shared-folder.png)
 
-4. If prompted for login, enter:  
+3. If prompted for login, enter:  
 `LAB\colep`
 
 ✅ Only users in the `LabShareAccess` group should be able to access this folder.
