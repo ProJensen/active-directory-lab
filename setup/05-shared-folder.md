@@ -100,12 +100,20 @@ Click **Apply** & **OK** to finish sharing the folder.
 From your **Windows 10/11 client**:
 
 1. Press `Win + R` → Type:  
-`\\lab.local\LabDocs`  
-or use server IP:  
-`\\192.168.100.10\LabDocs`
+`\\lab.local\LabDocs`
 
-2. Press Enter — you should see the shared folder contents  
-3. If prompted for login, enter:  
+![Access from Server Name](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/(5)lab.local%5CLabDocs.png)
+
+or use server IP:  
+`\\192.168.56.10\LabDocs`
+
+![Access from Server IP](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/(5)192.168.56.10%5CLabDocs.png)
+
+3. Press Enter — you should see the shared folder contents
+
+![Shared Folder](https://raw.githubusercontent.com/ProJensen/active-directory-lab/refs/heads/main/screenshot/(5)shared-folder.png)
+
+4. If prompted for login, enter:  
 `LAB\colep`
 
 ✅ Only users in the `LabShareAccess` group should be able to access this folder.
